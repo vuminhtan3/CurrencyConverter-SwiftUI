@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var leftAmount = ""
+    @State var rightAmount = ""
+    
     var body: some View {
         ZStack{
             //Background Image
@@ -43,9 +47,13 @@ struct ContentView: View {
                                 .font(.headline)
                                 .foregroundColor(.white)
                         }
+                        .padding(.bottom, -3)
+                        
                         //Textfield
-                        Text("Textfield")
-                            .foregroundColor(.white)
+                        TextField("Amount", text: $leftAmount)
+                            .padding(7)
+                            .background(Color(UIColor.systemGray6))
+                            .cornerRadius(10)
                         
                     }
                     //Equal sign
@@ -56,23 +64,30 @@ struct ContentView: View {
                     //Right conversion section
                     VStack {
                         HStack {
+                            //Coin name
+                            Text("Gold piece")
+                                .font(.headline)
+                                .foregroundColor(.white)
+                            
                             //Coin icon
                             Image("goldpiece")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 33)
-                            
-                            //Coin name
-                            Text("Gold piece")
-                                .font(.headline)
-                                .foregroundColor(.white)
                         }
+                        .padding(.bottom, -3)
                         
                         //Textfield
-                        Text("Textfield")
-                            .foregroundColor(.white)
+                        TextField("Amount", text: $rightAmount)
+                            .padding(7)
+                            .background(Color(UIColor.systemGray6))
+                            .cornerRadius(10)
+                            .multilineTextAlignment(TextAlignment.trailing)
                     }
                 }
+                .padding()
+                .background(.black.opacity(0.5))
+                .cornerRadius(50)
                 
                 Spacer()
                 
@@ -87,7 +102,7 @@ struct ContentView: View {
                     }
                     .font(.largeTitle)
                     .foregroundColor(.white)
-                    .padding()
+                    .padding(.trailing)
                 }
             }
         }
