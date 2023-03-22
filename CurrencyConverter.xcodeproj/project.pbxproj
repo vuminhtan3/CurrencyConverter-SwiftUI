@@ -11,6 +11,8 @@
 		B494C96329C999CE002A1507 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494C96229C999CE002A1507 /* ContentView.swift */; };
 		B494C96529C999D0002A1507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B494C96429C999D0002A1507 /* Assets.xcassets */; };
 		B494C96829C999D0002A1507 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B494C96729C999D0002A1507 /* Preview Assets.xcassets */; };
+		B494C96F29CA2B71002A1507 /* ExchangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494C96E29CA2B71002A1507 /* ExchangeInfo.swift */; };
+		B494C97129CAA83E002A1507 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494C97029CAA83E002A1507 /* ExchangeRate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B494C96229C999CE002A1507 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B494C96429C999D0002A1507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B494C96729C999D0002A1507 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B494C96E29CA2B71002A1507 /* ExchangeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeInfo.swift; sourceTree = "<group>"; };
+		B494C97029CAA83E002A1507 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				B494C96029C999CE002A1507 /* CurrencyConverterApp.swift */,
 				B494C96229C999CE002A1507 /* ContentView.swift */,
+				B494C96E29CA2B71002A1507 /* ExchangeInfo.swift */,
+				B494C97029CAA83E002A1507 /* ExchangeRate.swift */,
 				B494C96429C999D0002A1507 /* Assets.xcassets */,
 				B494C96629C999D0002A1507 /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B494C97129CAA83E002A1507 /* ExchangeRate.swift in Sources */,
+				B494C96F29CA2B71002A1507 /* ExchangeInfo.swift in Sources */,
 				B494C96329C999CE002A1507 /* ContentView.swift in Sources */,
 				B494C96129C999CE002A1507 /* CurrencyConverterApp.swift in Sources */,
 			);
