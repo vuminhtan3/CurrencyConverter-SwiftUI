@@ -50,6 +50,7 @@ struct ExchangeInfo: View {
                     .cornerRadius(10)
             }
         }
+        .foregroundColor(.black)
     }
 }
 
