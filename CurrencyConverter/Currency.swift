@@ -5,7 +5,7 @@
 //  Created by Minh Tan Vu on 28/03/2023.
 //
 
-enum CurrencyModel: Double, CaseIterable {
+enum Currency: Double, CaseIterable {
     case copperPenny = 640
     case silverPenny = 64
     case silverPiece = 16
