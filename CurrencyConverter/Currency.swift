@@ -6,11 +6,25 @@
 //
 
 enum Currency: Double, CaseIterable {
-    case copperPenny = 640
+    case copperPenny = 6400
     case silverPenny = 64
     case silverPiece = 16
     case goldPenny = 4
     case goldPiece = 1
+    
+    func convert(amountString: String, to currency: Currency) -> String {
+        guard let startAmount = Double(amountString) else {
+            return ""
+        }
+        
+        let convertedAmount = (startAmount / self.rawValue) * currency.rawValue
+        
+        if convertedAmount > 0 {
+            return String(format: "%.2f", convertedAmount)
+        } else {
+            return ""
+        }
+    }
 }
 
 enum CurrencyText: String, CaseIterable {
